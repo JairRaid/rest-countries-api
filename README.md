@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/JairRaid/rest-countries-api
+- Live Site URL: https://jairraid.github.io/rest-countries-api/
 
 ## My process
 
@@ -56,3 +56,5 @@ I learned to:
 - create custom dropdown menu
 
 ## Author
+
+-
