@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-grey-950: #111517;
+  --color-grey-400: #808080;
+  --color-grey-350: #979797;
+  --color-grey-300: #b2b2b2;
+  --color-grey-250: #c4c4c4;
+  --color-grey-50: #fcfcfc;
+  --color-blue-950: #202c36;
+  --color-blue-900: #2b3844;
+  --color-black-5p: #0000000d;
+  --color-black-10p: #0000001a;
+
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  /* * {
+    @apply transition;
+  } */
+
+  body {
+    @apply font-nunito-sans bg-grey-50;
+  }
+
+  h1 {
+    @apply text-grey-950 text-[0.875rem] font-extrabold leading-5 lg:text-2xl lg:leading-[137.5%];
+  }
+
+  h2 {
+    @apply text-grey-950 text-[1.125rem] font-extrabold leading-[145%];
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  .center-both {
+    @apply items-center justify-center;
+  }
+
+  /* From Uiverse.io by satyamchaudharydev */
+  .loading {
+    --speed-of-animation: 0.9s;
+    --gap: 6px;
+    --first-color: #4c86f9;
+    --second-color: #49a84c;
+    --third-color: #f6bb02;
+    --fourth-color: #f6bb02;
+    --fifth-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 6px;
+    height: 100px;
+  }
+
+  .loading span {
+    width: 4px;
+    height: 50px;
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+  }
+
+  .loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.8s;
+  }
+
+  .loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.7s;
+  }
+
+  .loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.6s;
+  }
+
+  .loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.5s;
+  }
+
+  @keyframes scale {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.05);
+    }
+
+    20% {
+      transform: scaleY(1);
+    }
+  }
+}
