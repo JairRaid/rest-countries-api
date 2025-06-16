@@ -27,7 +27,7 @@ function Home() {
           <SearchBar />
           <DropDownOptions />
         </div>
-        <section className="flex flex-col gap-y-10 px-[39px] md:grid md:grid-cols-2 md:gap-[72px] lg:grid-cols-3 lg:px-0 ">
+        <section className="flex flex-col gap-y-10 px-[39px] md:grid md:grid-cols-2 md:gap-[72px] lg:grid-cols-4 lg:px-0 ">
           {countries &&
             !selectedRegion &&
             !search &&
